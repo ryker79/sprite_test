@@ -44,7 +44,7 @@ void loop()
 	{
 		playerx--;
 	}
-	if(arduboy.pressed(RIGHT_BUTTON) && playerx < (maxRight-playerWidth))
+	if(arduboy.pressed(RIGHT_BUTTON) && playerx < (WIDTH-playerWidth))
 	{
 		playerx++;
 	}
@@ -52,7 +52,7 @@ void loop()
 	{
 		playery--;
 	}
-	if(arduboy.pressed(DOWN_BUTTON) && playery < (maxDown-playerHeight))
+	if(arduboy.pressed(DOWN_BUTTON) && playery < (HEIGHT-playerHeight))
 	{
 		playery++;
 	}
